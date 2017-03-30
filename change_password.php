@@ -15,9 +15,9 @@
 	curl_setopt($curl, CURLOPT_POST, true);
 	curl_setopt($curl, CURLOPT_POSTFIELDS, $postPassword);
 	curl_setopt($curl, CURLOPT_HTTPHEADER, array(
-	'Content-Type: application/json',
-    'Content-Length: ' . strlen($postPassword))
-	);
+		'Content-Type: application/json',
+    		'Content-Length: ' . strlen($postPassword))
+		);
 	//Execute cURL
 	$response = curl_exec($curl);
 
